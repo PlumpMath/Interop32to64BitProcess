@@ -1,0 +1,23 @@
+import "oaidl.idl";
+
+// define the ICreateMyCar interface
+[object, uuid(dc186800-657f-11d4-B0B5-0050BABFC903),
+oleautomation, helpstring("This lets you create a IServerInterface")]
+interface IServerInterface : IUnknown
+{
+    HRESULT Square([in]long *pVal);
+    HRESULT Cube([in]long *pVal);
+};
+
+// library statement
+[uuid(dc186800-657f-11d4-B0B5-0050BABFC904), version(1.0),
+helpstring("RPCComServer with typeLib")]
+library RPCComServerLib
+{
+    importlib("stdole32.tlb");
+    [uuid(dc186800-657f-11d4-B0B5-0050BABFC905)]
+    coclass COMServer
+    {
+        [default] interface IServerInterface;
+    };
+};
