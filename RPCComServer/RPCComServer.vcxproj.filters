@@ -68,6 +68,6 @@
     </Midl>
   </ItemGroup>
   <ItemGroup>
-    <None Include="XCFramework.licenseheader" />
+    <None Include="RPCComServer.licenseheader" />
   </ItemGroup>
 </Project>
