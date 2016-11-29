@@ -117,6 +117,9 @@
       <WarnAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</WarnAsError>
     </Midl>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="XCFramework.licenseheader" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

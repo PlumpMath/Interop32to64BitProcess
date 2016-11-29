@@ -67,4 +67,7 @@
       <Filter>Source Files</Filter>
     </Midl>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="XCFramework.licenseheader" />
+  </ItemGroup>
 </Project>
